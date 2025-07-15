@@ -1,7 +1,7 @@
 import sys
 import os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
-
+from src.scenario import scenario_manager
 from simulation.traffic_sim import simulate_traffic_and_scores
 from simulation.optimizer import close_random_edge_and_evaluate, find_best_road_to_remove
 import streamlit as st
